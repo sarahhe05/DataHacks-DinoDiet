@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/styles.css">
+        <title> Dinosaur </title>
+    </head>
+
+    <body>
+        <div class="outer-container">
+            <h1 id="title"> Dinosaur </h1>
+            <p> Don't know what pasta this is? Upload your photo and we will see. </p>
+                
+            <!--From layout-->
+                    
+                <!-- Upload image input-->
+                <form action="{{ url_for('predict_image_file') }}" enctype="multipart/form-data" method="POST">
+                    <input class="hide-upload" id="upload" name="file" type="file">
+                    <label class="Click-to-Upload-button" for="upload"><p class="button-text">Choose file</p></label>
+                                
+                    <!-- Uploaded image area-->
+                    <div class="image-area">
+                        <img alt="" class="uploaded-image" id="imageResult" src="#">
+                    </div>
+
+                    <!-- Submit button-->
+                    <input class="Submit-button" type="submit" value="Submit" onmouseover="this.style.color='#EC6E44';" 
+                    onmouseout="this.style.color='#1D1210';">
+                </form>
+                
+            <!--From layout-->
+                <h2>Prediction:</h2>
+                {% if predictions %}
+                <h1>{{predictions}}</h1>
+                <h3>{{confidence}}</h3>
+                {% else %}
+                <p>{{err}}</p>
+                {% endif %}
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename='js/image_upload.js')}}"></script>
+    </body>
+</html>

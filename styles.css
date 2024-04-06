@@ -1,0 +1,137 @@
+/*reset page spacing*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  @font-face {
+    font-family: 'TitleFont'; /* Name your font */
+    src: url('/static/beon/Beon-Regular.ttf'); /* URL to your font file */
+  }
+
+  body {
+    background: #D7F2FD;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: #FFF3E7;
+    font-size: 55pt;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'TitleFont';
+    text-shadow:
+    0 0 5px #FFF3E7,
+    0 0 10px #FFF3E7,
+    0 0 20px #EC6E44,
+    0 0 25px #EC6E44;
+  }
+
+  h2 {
+    color: #FFF3E7;
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'TitleFont';
+    text-shadow:
+    0 0 5px #FFF3E7,
+    0 0 10px #FFF3E7,
+    0 0 20px #EC6E44,
+    0 0 25px #EC6E44;
+    margin-top: 85px;
+  }
+
+  h3 {
+    color: #FFF3E7;
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'TitleFont';
+    text-shadow:
+    0 0 5px #FFF3E7,
+    0 0 10px #FFF3E7,
+    0 0 20px #EC6E44,
+    0 0 25px #EC6E44;
+  }
+ 
+  p {
+    font-size: 12pt;
+    text-align: center;
+    font-family: 'Verdana';
+    color: #1d1210;
+  }
+
+  #title {
+    padding-top: 10%;
+  }
+
+  .outer-container{
+    background-color: rgba(233,170,76,0.5);
+    border: 10px solid #FFF3E7;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px; /* Optional: Add rounded corners to the container */
+    box-shadow: 0 0 20px 10px rgba(233,170,76,0.5); /* Apply glow effect */
+    padding-bottom: 30px;
+  }
+
+  .hide-upload{
+    opacity: 0;
+  }
+
+  .Click-to-Upload-button {
+    position: absolute;
+    left: 50%;
+    height: auto;
+    transform: translateX(-50%);
+    background-color:#E9AA4C;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .button-text {
+    color: #1D1210;
+  }
+
+  .Click-to-Upload-button:hover {
+    background-color:#FFF3E7;
+    box-shadow: 0 0 20px #EC6E44;
+  }
+  
+  .Click-to-Upload-button:hover .button-text{
+    color: #EC6E44;
+  }
+
+  .Submit-button {
+    position: absolute;
+    left: 50%;
+    height: auto;
+    transform: translateX(-50%);
+    background-color:#E9AA4C;
+    margin-top: 20px; 
+    margin-bottom: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .Submit-button:hover {
+    background-color:#FFF3E7;
+    box-shadow: 0 0 20px #EC6E44;
+  }
+
+  .image-area{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uploaded-image{
+    width: 150px;
+    justify-content: center;
+    margin-top: 50px;
+  } 
