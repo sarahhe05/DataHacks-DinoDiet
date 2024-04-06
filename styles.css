@@ -6,7 +6,12 @@
 
   @font-face {
     font-family: 'TitleFont'; /* Name your font */
-    src: url('/static/beon/Beon-Regular.ttf'); /* URL to your font file */
+    src: url('/antipasto/Antipasto-Pro-ExtraBold-trial.ttf'); /* URL to your font file */
+  }
+
+  @font-face {
+    font-family: 'ParagraphFont'; /* Name your font */
+    src: url('/antipasto/Antipasto-Pro-Regular-trial.ttf'); /* URL to your font file */
   }
 
   body {
@@ -16,48 +21,33 @@
   }
   
   h1 {
-    color: #FFF3E7;
-    font-size: 55pt;
+    color: #F4F7E2;
+    font-size: 75pt;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'TitleFont';
-    text-shadow:
-    0 0 5px #FFF3E7,
-    0 0 10px #FFF3E7,
-    0 0 20px #EC6E44,
-    0 0 25px #EC6E44;
   }
 
   h2 {
-    color: #FFF3E7;
+    color: #F4F7E2;
     font-size: 30pt;
     text-align: center;
     font-family: 'TitleFont';
-    text-shadow:
-    0 0 5px #FFF3E7,
-    0 0 10px #FFF3E7,
-    0 0 20px #EC6E44,
-    0 0 25px #EC6E44;
     margin-top: 85px;
   }
 
   h3 {
-    color: #FFF3E7;
+    color: #F4F7E2;
     font-size: 20pt;
     text-align: center;
     font-family: 'TitleFont';
-    text-shadow:
-    0 0 5px #FFF3E7,
-    0 0 10px #FFF3E7,
-    0 0 20px #EC6E44,
-    0 0 25px #EC6E44;
   }
  
   p {
-    font-size: 12pt;
+    font-size: 15pt;
     text-align: center;
-    font-family: 'Verdana';
+    font-family: 'ParagraphFont';
     color: #1d1210;
   }
 
@@ -76,48 +66,31 @@
     transform: translate(-50%, -50%);
   }
 
-  .Click-to-Upload-button {
-    position: absolute;
-    left: 50%;
+  .option-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .option-button {
+    display: block;
+    width: 70px;
     height: auto;
-    transform: translateX(-50%);
-    background-color:#E9AA4C;
+    background-color:#D7F2FD;
     margin-top: 20px; 
-    margin-bottom: 20px;
     padding: 10px;
     border-radius: 8px;
     border: none;
   }
 
-  .button-text {
-    color: #1D1210;
+  .option-button_text {
+    color: #2F302F;
   }
 
-  .Click-to-Upload-button:hover {
-    background-color:#FFF3E7;
-    box-shadow: 0 0 20px #EC6E44;
-  }
-  
-  .Click-to-Upload-button:hover .button-text{
-    color: #EC6E44;
-  }
-
-  .Submit-button {
-    position: absolute;
-    left: 50%;
-    height: auto;
-    transform: translateX(-50%);
-    background-color:#E9AA4C;
-    margin-top: 20px; 
-    margin-bottom: 150px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-  }
-
-  .Submit-button:hover {
-    background-color:#FFF3E7;
-    box-shadow: 0 0 20px #EC6E44;
+  .option-button:hover {
+    background-color:#EFD462;
   }
 
   .image-area{
@@ -150,5 +123,5 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2; /* Ensure the image is behind other content */
+    z-index: -1; /* Ensure the image is behind other content */
   }
