@@ -10,8 +10,9 @@
   }
 
   body {
-    background: #D7F2FD;
+    background-color: #D7F2FD;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   
   h1 {
@@ -65,18 +66,14 @@
   }
 
   .outer-container{
-    background-color: rgba(233,170,76,0.5);
-    border: 10px solid #FFF3E7;
+    background-color: #8ACFEB;
     width: 800px;
-    margin: 0 auto;
-    margin-top: 60px;
+    height: 500px;
     border-radius: 10px; /* Optional: Add rounded corners to the container */
-    box-shadow: 0 0 20px 10px rgba(233,170,76,0.5); /* Apply glow effect */
-    padding-bottom: 30px;
-  }
-
-  .hide-upload{
-    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .Click-to-Upload-button {
@@ -134,4 +131,24 @@
     width: 150px;
     justify-content: center;
     margin-top: 50px;
-  } 
+  }
+
+  #grass{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image cover the entire container without stretching */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image is behind other content */
+  }
+
+  #dinosaur{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image cover the entire container without stretching */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure the image is behind other content */
+  }
