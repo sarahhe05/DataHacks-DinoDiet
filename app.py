@@ -19,8 +19,15 @@ def submit():
         dino_type = request.form['dinosaur_type']
         length = request.form['length']
         result = predict_one(period, location, dino_type, length)
+        if result == "herbivorous":
+            safety = "You're safe!"
+        elif result == "omnivorous":
+            safety = "Feed the dinosaur some plants or you will become the food!"
+        else:
+            safety = "RUN!"
+
         # Call your function with the dropdown values
-        return render_template("index.html", display = result)
+        return render_template("index.html", display_result = result, display_safety = safety)
     
 # Driver code
 if __name__ == "__main__":

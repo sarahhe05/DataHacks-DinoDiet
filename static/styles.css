@@ -47,7 +47,7 @@ li a:hover {
 }
 
 body {
-  background-color: #D7F2FD;
+  background-color: #9DC23D;
   background: url(/static/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,9 +55,9 @@ body {
 
 h1 {
   color: #F4F7E2;
-  font-size: 75pt;
+  font-size: 65pt;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
   font-family: 'TitleFont';
 }
@@ -66,17 +66,13 @@ p {
   font-size: 15pt;
   text-align: center;
   font-family: 'ParagraphFont';
-  color: #1d1210;
-}
-
-#title {
-  padding-top: 7%;
+  color: #2F302F;
 }
 
 .outer-container{
   background-color: #8ACFEB;
   width: 800px;
-  height: 500px;
+  height: 550px;
   border-radius: 10px; /* Optional: Add rounded corners to the container */
   position: fixed;
   top: 50%;
@@ -84,7 +80,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.option-container {
+.inner-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -93,13 +89,25 @@ p {
 }
 
 .dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dropdown {
   padding: 5px;
+}
+
+.dropdown-question{
+  display: flex;
+  align-items: center; /* Center items vertically */
 }
 
 /* Style the dropdown button */
 select[name="geological_period"], select[name="country"], select[name="dinosaur_type"], select[name="length"] {
   display: block;
-  width: 150px;
+  width: 175px;
   height: auto;
   background-color:#D7F2FD;
   padding: 10px;
@@ -107,6 +115,7 @@ select[name="geological_period"], select[name="country"], select[name="dinosaur_
   border: none;
   font-size: 20px;
   font-family: TitleFont;
+  color: #2F302F;
   cursor: pointer;
 }
 
