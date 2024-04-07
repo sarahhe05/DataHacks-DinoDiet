@@ -48,6 +48,7 @@
 
   body {
     background-color: #D7F2FD;
+    background: url(/images/background.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -109,18 +110,19 @@
   .dropbtn-text {
     color: #2F302F;
     padding: 5px;
+    font-size: 18px;
   }
 
   /* Style the dropdown button */
   .dropbtn {
     display: block;
-    width: 100px;
+    width: 150px;
     height: auto;
     background-color:#D7F2FD;
     padding: 10px;
     border-radius: 8px;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     font-family: TitleFont;
     cursor: pointer;
   }
@@ -134,11 +136,17 @@
     display: none;
     position: absolute;
     background-color: #F4F7E2;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 #2F302F;
+    width: 150px;
     text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 200px; /* Set a max height for the dropdown */
     z-index: 1;
   }
 
+  .dropdown-content :hover{
+    background-color: #EFD462;
+  }
   /* Show the dropdown menu when the button is clicked */
   .show {
     display: block;
@@ -150,6 +158,27 @@
     justify-content: center;
     align-items: center;
   }  
+
+  .Submit-button {
+    position: absolute;
+    left: 50%;
+    height: auto;
+    transform: translateX(-50%);
+    background-color:#D7F2FD;
+    margin-top: 20px; 
+    margin-bottom: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-family: TitleFont;
+  }
+
+  .Submit-button:hover {
+    background-color:#EFD462;
+  }
+
+
+
 
   #animated-element { 
     width: 20%;
