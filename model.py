@@ -81,15 +81,12 @@ len_arr = np.array(clean["length"])
 for i, elem in enumerate(len_arr):
   len_arr[i] = float(elem[:-1])
 clean["length"] = len_arr
-clean
 
 #plotting length column to see the distribution on the histogram
-clean.plot(kind = "hist", y = "length")
+# clean.plot(kind = "hist", y = "length")
 
 #find the median length
 median = clean["length"].median()
-median
-
 #change the length columns into two categories: small and large
 category_lst = []
 for length in clean["length"]:

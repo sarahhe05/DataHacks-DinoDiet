@@ -14,14 +14,14 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
-        period = request.form['dropdown1']
-        location = request.form['dropdown2']
-        type = request.form['dropdown3']
-        length = request.form['dropdown4']
-        result = predict_one(period, location, type, length)
+        period = request.form['geological_period']
+        location = request.form['country']
+        dino_type = request.form['dinosaur_type']
+        length = request.form['length']
+        result = predict_one(period, location, dino_type, length)
         # Call your function with the dropdown values
-        print(result)
-
+        return result
+    
 # Driver code
 if __name__ == "__main__":
     app.run(port=9000, debug=True)
