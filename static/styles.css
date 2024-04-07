@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'TitleFont'; /* Name your font */
-  src: url('/antipasto/Antipasto-Pro-ExtraBold-trial.ttf'); /* URL to your font file */
+  src: url('/static/antipasto/Antipasto-Pro-ExtraBold-trial.ttf'); /* URL to your font file */
 }
 
 @font-face {
   font-family: 'ParagraphFont'; /* Name your font */
-  src: url('/antipasto/Antipasto-Pro-Regular-trial.ttf'); /* URL to your font file */
+  src: url('/static/antipasto/Antipasto-Pro-Regular-trial.ttf'); /* URL to your font file */
 }
 
 /*style navbar*/
@@ -62,21 +62,6 @@ h1 {
   font-family: 'TitleFont';
 }
 
-h2 {
-  color: #F4F7E2;
-  font-size: 30pt;
-  text-align: center;
-  font-family: 'TitleFont';
-  margin-top: 85px;
-}
-
-h3 {
-  color: #F4F7E2;
-  font-size: 20pt;
-  text-align: center;
-  font-family: 'TitleFont';
-}
-
 p {
   font-size: 15pt;
   text-align: center;
@@ -85,7 +70,7 @@ p {
 }
 
 #title {
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
 .outer-container{
@@ -104,11 +89,15 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 25px;
+}
+
+.dropdown {
+  padding: 5px;
 }
 
 /* Style the dropdown button */
-#dropdown1, #dropdown2, #dropdown3, #dropdown4 {
+select[name="geological_period"], select[name="country"], select[name="dinosaur_type"], select[name="length"] {
   display: block;
   width: 150px;
   height: auto;
@@ -119,10 +108,6 @@ p {
   font-size: 20px;
   font-family: TitleFont;
   cursor: pointer;
-}
-
-.dropbtn:hover {
-  background-color:#EFD462;
 }
 
 /* Style the dropdown content (hidden by default) */

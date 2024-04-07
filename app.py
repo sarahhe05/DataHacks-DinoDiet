@@ -20,7 +20,7 @@ def submit():
         length = request.form['length']
         result = predict_one(period, location, dino_type, length)
         # Call your function with the dropdown values
-        return result
+        return render_template("index.html", display = result)
     
 # Driver code
 if __name__ == "__main__":

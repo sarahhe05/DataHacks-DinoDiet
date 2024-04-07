@@ -13,93 +13,103 @@
     <!--navigation bar-->
     <nav>
         <ul>
-          <li><a href='#technical-work-section'><b>dinosaur diet</b></a></li>
+          <li><a href='#dinosaur-diet'><b>dinosaur diet</b></a></li>
           <li><a href='#other-section'><b>visualization</b></a></li>
         </ul>
     </nav>
     
-    <div class="outer-container">
-        <h1 id="title">Dinosaur Diet</h1>
-        <p>You encountered a dinosaur! Figure out what it eats or you will get eaten!</p>
-        
-        <div class="option-container">
+    <section id='dinosaur-diet'>
+        <div class="outer-container">
+            <h1 id="title">Dinosaur Diet</h1>
+            <p>You encountered a dinosaur! Figure out what it eats or you will get eaten!</p>
             
-            <form action="/submit" method="post"> 
+            <div class="option-container">
+                
+                <form action="/submit" method="post"> 
 
-            <!-- First dropdown menu -->
-            <div class="dropdown">
-                <select name="geological_period">
-                    <option value="Cretaceous" class="dropbtn-text">Cretaceous</option>
-                    <option value="Jurassic" class="dropbtn-text">Jurassic</option>
-                    <option value="Triassic" class="dropbtn-text">Triassic</option>
-                </select>
+                <!-- First dropdown menu -->
+                <div class="dropdown">
+                    <select name="geological_period">
+                        <option value="Cretaceous" class="dropbtn-text">Cretaceous</option>
+                        <option value="Jurassic" class="dropbtn-text">Jurassic</option>
+                        <option value="Triassic" class="dropbtn-text">Triassic</option>
+                    </select>
+                </div>
+
+                <!-- Second dropdown menu -->
+                <div class="dropdown">
+                    <select name="country">
+                        <option value="Antarctica" class="dropbtn-text">Antarctica</option>
+                        <option value="Argentina" class="dropbtn-text">Argentina</option>
+                        <option value="Australia" class="dropbtn-text">Australia</option>
+                        <option value="Brazil" class="dropbtn-text">Brazil</option>
+                        <option value="Canada" class="dropbtn-text">Canada</option>
+                        <option value="China" class="dropbtn-text">China</option>
+                        <option value="Egypt" class="dropbtn-text">Egypt</option>
+                        <option value="France" class="dropbtn-text">France</option>
+                        <option value="Germany" class="dropbtn-text">Germany</option>
+                        <option value="India" class="dropbtn-text">India</option>
+                        <option value="Japan" class="dropbtn-text">Japan</option>
+                        <option value="Kazakhstan" class="dropbtn-text">Kazakhstan</option>
+                        <option value="Madagascar" class="dropbtn-text">Madagascar</option>
+                        <option value="Malawi" class="dropbtn-text">Malawi</option>
+                        <option value="Mongolia" class="dropbtn-text">Mongolia</option>
+                        <option value="Morocco" class="dropbtn-text">Morocco</option>
+                        <option value="Niger" class="dropbtn-text">Niger</option>
+                        <option value="North Africa" class="dropbtn-text">North Africa</option>
+                        <option value="Romania" class="dropbtn-text">Romania</option>
+                        <option value="Russia" class="dropbtn-text">Russia</option>
+                        <option value="South Africa" class="dropbtn-text">South Africa</option>
+                        <option value="Spain" class="dropbtn-text">Spain</option>
+                        <option value="Switzerland" class="dropbtn-text">Switzerland</option>
+                        <option value="Tanzania" class="dropbtn-text">Tanzania</option>
+                        <option value="Tunisia" class="dropbtn-text">Tunisia</option>
+                        <option value="United Kingdom" class="dropbtn-text">United Kingdom</option>
+                        <option value="Uruguay" class="dropbtn-text">Uruguay</option>
+                        <option value="USA" class="dropbtn-text">USA</option>
+                        <option value="Uzbekistan" class="dropbtn-text">Uzbekistan</option>
+                        <option value="Wales" class="dropbtn-text">Wales</option>
+                        <option value="Zimbabwe" class="dropbtn-text">Zimbabwe</option>
+                    </select>
+                </div>
+
+                <!-- Third dropdown menu -->
+                <div class="dropdown">
+                    <select name="dinosaur_type">
+                        <option value="armoured dinosaur" class="dropbtn-text">Armoured Dinosaur</option>
+                        <option value="ceratopsian" class="dropbtn-text">Ceratopsian</option>
+                        <option value="euornithopod" class="dropbtn-text">Euornithopod</option>
+                        <option value="sauropod" class="dropbtn-text">Sauropod</option>
+                        <option value="small theropod" class="dropbtn-text">Small Theropod</option>
+                        <option value="large theropod" class="dropbtn-text">Large Theropod</option>
+                    </select>
+                </div>
+
+                <!-- Fourth dropdown menu -->
+                <div class="dropdown">
+                    <select name="length">
+                        <option value="tall" class="dropbtn-text">Tall</option>
+                        <option value="short"class="dropbtn-text">Short</option>
+                    </select>
+                </div>
+
             </div>
 
-            <!-- Second dropdown menu -->
-            <div class="dropdown">
-                <select name="country">
-                    <option value="Antarctica" class="dropbtn-text">Antarctica</option>
-                    <option value="Argentina" class="dropbtn-text">Argentina</option>
-                    <option value="Australia" class="dropbtn-text">Australia</option>
-                    <option value="Brazil" class="dropbtn-text">Brazil</option>
-                    <option value="Canada" class="dropbtn-text">Canada</option>
-                    <option value="China" class="dropbtn-text">China</option>
-                    <option value="Egypt" class="dropbtn-text">Egypt</option>
-                    <option value="France" class="dropbtn-text">France</option>
-                    <option value="Germany" class="dropbtn-text">Germany</option>
-                    <option value="India" class="dropbtn-text">India</option>
-                    <option value="Japan" class="dropbtn-text">Japan</option>
-                    <option value="Kazakhstan" class="dropbtn-text">Kazakhstan</option>
-                    <option value="Madagascar" class="dropbtn-text">Madagascar</option>
-                    <option value="Malawi" class="dropbtn-text">Malawi</option>
-                    <option value="Mongolia" class="dropbtn-text">Mongolia</option>
-                    <option value="Morocco" class="dropbtn-text">Morocco</option>
-                    <option value="Niger" class="dropbtn-text">Niger</option>
-                    <option value="North Africa" class="dropbtn-text">North Africa</option>
-                    <option value="Romania" class="dropbtn-text">Romania</option>
-                    <option value="Russia" class="dropbtn-text">Russia</option>
-                    <option value="South Africa" class="dropbtn-text">South Africa</option>
-                    <option value="Spain" class="dropbtn-text">Spain</option>
-                    <option value="Switzerland" class="dropbtn-text">Switzerland</option>
-                    <option value="Tanzania" class="dropbtn-text">Tanzania</option>
-                    <option value="Tunisia" class="dropbtn-text">Tunisia</option>
-                    <option value="United Kingdom" class="dropbtn-text">United Kingdom</option>
-                    <option value="Uruguay" class="dropbtn-text">Uruguay</option>
-                    <option value="USA" class="dropbtn-text">USA</option>
-                    <option value="Uzbekistan" class="dropbtn-text">Uzbekistan</option>
-                    <option value="Wales" class="dropbtn-text">Wales</option>
-                    <option value="Zimbabwe" class="dropbtn-text">Zimbabwe</option>
-                </select>
-            </div>
+            {% if display %}
+            <h1>{{display}}</h1>
+            {% endif %}
 
-            <!-- Third dropdown menu -->
-            <div class="dropdown">
-                <select name="dinosaur_type">
-                    <option value="armoured dinosaur" class="dropbtn-text">Armoured Dinosaur</option>
-                    <option value="ceratopsian" class="dropbtn-text">Ceratopsian</option>
-                    <option value="euornithopod" class="dropbtn-text">Euornithopod</option>
-                    <option value="sauropod" class="dropbtn-text">Sauropod</option>
-                    <option value="small theropod" class="dropbtn-text">Small Theropod</option>
-                    <option value="large theropod" class="dropbtn-text">Large Theropod</option>
-                </select>
-            </div>
-
-            <!-- Fourth dropdown menu -->
-            <div class="dropdown">
-                <select name="length">
-                    <option value="tall" class="dropbtn-text">Tall</option>
-                    <option value="short"class="dropbtn-text">Short</option>
-                </select>
-            </div>
-
+            <!-- Submit button-->
+            <input class="Submit-button" type="submit" value="Submit">
+            </form>
         </div>
 
-        <!-- Submit button-->
-        <input class="Submit-button" type="submit" value="Submit">
-        </form>
-    </div>
 
-    <img id="animated-element" src="/static/images/dinosaur.png" alt="Animated Image">
+        <img id="animated-element" src="/static/images/dinosaur.png" alt="Animated Image">
+    </section>
 
+    <section id='visualization'>
+        <h1>testing</h1>
+    </section>
 </body>
 </html>
