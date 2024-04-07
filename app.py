@@ -19,6 +19,8 @@ def submit():
         location = request.form['country']
         dino_type = request.form['dinosaur_type']
         length = request.form['length']
+        choice = f"{period}, {location}, {dino_type.title()}, {length.title()}"
+
         result = predict_one(period, location, dino_type, length)
         if result == "herbivorous":
             safety = "You're safe!"
@@ -28,7 +30,7 @@ def submit():
             safety = "RUN!"
 
         # Call your function with the dropdown values
-        return render_template("index.html", display_result = result, display_safety = safety)
+        return render_template("index.html", display_choice = choice, display_result = result, display_safety = safety)
     
 # Driver code
 if __name__ == "__main__":

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles.css"/>
     <script src="/static/extra.js" defer></script>
-    <title>Dinosaur Diet</title>
+    <title>Dino Diet</title>
 
 </head>
 
@@ -13,18 +13,18 @@
     <!--navigation bar-->
     <nav>
         <ul>
-          <li><a href='#dinosaur-diet'><b>dinosaur diet</b></a></li>
+          <li><a href='#dino-diet'><b>dino diet</b></a></li>
           <li><a href='#visualizations'><b>visualizations</b></a></li>
         </ul>
     </nav>
     
-    <section id='dinosaur-diet'>
+    <section id='dino-diet'>
         <img id="animated-cloud1" src="/static/images/clouds.png" alt="Animated Clouds">
         <img id="animated-cloud2" src="/static/images/clouds.png" alt="Animated Clouds">
 
         <div class="outer-container">
-            <h1 id="title">dinosaur diet</h1>
-            <p>You encountered a dinosaur! Figure out what it eats or you will get eaten!</p>
+            <h1 id="title">dino diet</h1>
+            <p>You encountered a dinosaur! Figure out what it eats or you might get eaten!</p>
             
             <div class="inner-container">
                 <form action="/submit" method="post">
@@ -102,8 +102,9 @@
                 
                    
             {% if display_result %}
+            <p id="display-choice">{{display_choice}}</p>
             <h1>{{display_result}}</h1>
-            <p>{{display_safety}}</p>
+            <p id="display-safety">{{display_safety}}</p>
             {% endif %}
 
             <!-- Submit button-->
