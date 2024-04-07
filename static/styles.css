@@ -48,7 +48,7 @@
 
   body {
     background-color: #D7F2FD;
-    background: url(/images/background.jpg);;
+    background: url(/static/images/background.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
   }

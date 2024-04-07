@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <script src="/static/extra.js" defer></script>
+    <title>Sarah He</title>
+
+<body>
+    <!--navigation bar-->
+    <nav>
+        <ul>
+          <li><a href='#technical-work-section'><b>dino default</b></a></li>
+          <li><a href='#other-section'><b>visualization</b></a></li>
+        </ul>
+    </nav>
+
+    <div class="outer-container">
+        <h1 id="title">Dinosaur</h1>
+        <p>Dinosaur question LOLOL WE LOVE dinosaurs yay okay bye!</p>
+    
+        <div class="option-container">
+            <form id="dinosaur-form" action="/submit" method="post">
+                <!-- First dropdown menu -->
+                <div class="dropdown">
+                    <button type = "button" onclick="toggleDropdown('dropdown1')" class="dropbtn">Time Period</button>
+                    <div id="dropdown1" class="dropdown-content">
+                        <a href="#"><p class="dropbtn-text">Cretaceous</p></a>
+                        <a href="#"><p class="dropbtn-text">Jurassic</p></a>
+                        <a href="#"><p class="dropbtn-text">Triassic</p></a>
+                    </div>
+                </div>
+    
+                <!-- Second dropdown menu -->
+                <div class="dropdown">
+                    <button type="button" onclick="toggleDropdown('dropdown2')" class="dropbtn">Location</button>
+                    <div id="dropdown2" class="dropdown-content">
+                        <select name="dropdown2" class="dropbtn-text">
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Canada">Canada</option>
+                            <!-- Add other location options here -->
+                        </select>
+                    </div>
+                </div>
+    
+                <!-- Third dropdown menu -->
+                <div class="dropdown">
+                    <button type="button" onclick="toggleDropdown('dropdown3')" class="dropbtn">Type</button>
+                    <div id="dropdown3" class="dropdown-content">
+                        <select name="dropdown3" class="dropbtn-text">
+                            <option value="armoured dinosaur">Armoured Dinosaur</option>
+                            <option value="ceratopsian">Ceratopsian</option>
+                            <option value="euornithopod">Euornithopod</option>
+                            <option value="sauropod">Sauropod</option>
+                            <option value="small theropod">Small Theropod</option>
+                            <option value="large theropod">Large Theropod</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <!-- Fourth dropdown menu -->
+                <div class="dropdown">
+                    <button type="button" onclick="toggleDropdown('dropdown4')" class="dropbtn">Length</button>
+                    <div id="dropdown4" class="dropdown-content">
+                        <select name="dropdown4" class="dropbtn-text">
+                            <option value="Long">Long</option>
+                            <option value="Short">Short</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <!-- Submit button-->
+                <button type="submit" class="Submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <img id="animated-element" src="/static/images/dinosaur.png" alt="Animated Image">
+
+</body>
+</html>
