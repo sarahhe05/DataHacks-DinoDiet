@@ -144,9 +144,10 @@
     z-index: 1;
   }
 
-  .dropdown-content :hover{
+  .dropbtn-text:hover{
     background-color: #EFD462;
   }
+
   /* Show the dropdown menu when the button is clicked */
   .show {
     display: block;
@@ -172,13 +173,6 @@
     border: none;
     font-family: TitleFont;
   }
-
-  .Submit-button:hover {
-    background-color:#EFD462;
-  }
-
-
-
 
   #animated-element { 
     width: 20%;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="extra.js" defer></script>
+    <title>Sarah He</title>
+
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav>
+        <ul>
+          <li><a href='#technical-work-section'><b>dino default</b></a></li>
+          <li><a href='#other-section'><b>visualization</b></a></li>
+        </ul>
+    </nav>
+    
+    <div class="outer-container">
+        <h1 id="title"> Dinosaur </h1>
+        <p> Dinosaur question LOLOL WE LOVE dinosaurs yay okay bye!</p>
+        
+        <div class="option-container">
+            
+            <!-- First dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')" class="dropbtn" id="dropbtn1">Time Period</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Cretaceous', 'dropbtn1')"><p class="dropbtn-text">Cretaceous</p></a>
+                    <a href="#" onclick="selectCategory('Jurassic', 'dropbtn1')"><p class="dropbtn-text">Jurassic</p></a>
+                    <a href="#" onclick="selectCategory('Triassic', 'dropbtn1')"><p class="dropbtn-text">Triassic</p></a>
+                </div>
+            </div>
+
+            <!-- Second dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown2')" class="dropbtn">Location</button>
+                <div id="dropdown2" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Antarctica')"><p class="dropbtn-text">Antarctica</p></a>
+                    <a href="#" onclick="selectCategory('Argentina')"><p class="dropbtn-text">Argentina</p></a>
+                    <a href="#" onclick="selectCategory('Australia')"><p class="dropbtn-text">Australia</p></a>
+                    <a href="#" onclick="selectCategory('Brazil')"><p class="dropbtn-text">Brazil</p></a>
+                    <a href="#" onclick="selectCategory('Canada')"><p class="dropbtn-text">Canada</p></a>
+                    <a href="#" onclick="selectCategory('China')"><p class="dropbtn-text">China</p></a>
+                    <a href="#" onclick="selectCategory('Egypt')"><p class="dropbtn-text">Egypt</p></a>
+                    <a href="#" onclick="selectCategory('France')"><p class="dropbtn-text">France</p></a>
+                    <a href="#" onclick="selectCategory('Germany')"><p class="dropbtn-text">Germany</p></a>
+                    <a href="#" onclick="selectCategory('India')"><p class="dropbtn-text">India</p></a>
+                    <a href="#" onclick="selectCategory('Japan')"><p class="dropbtn-text">Japan</p></a>
+                    <a href="#" onclick="selectCategory('Kazakhstan')"><p class="dropbtn-text">Kazakhstan</p></a>
+                    <a href="#" onclick="selectCategory('Lesotho')"><p class="dropbtn-text">Lesotho</p></a>
+                    <a href="#" onclick="selectCategory('Madagascar')"><p class="dropbtn-text">Madagascar</p></a>
+                    <a href="#" onclick="selectCategory('Malawi')"><p class="dropbtn-text">Malawi</p></a>
+                    <a href="#" onclick="selectCategory('Mongolia')"><p class="dropbtn-text">Mongolia</p></a>
+                    <a href="#" onclick="selectCategory('Morocco')"><p class="dropbtn-text">Morocco</p></a>
+                    <a href="#" onclick="selectCategory('Niger')"><p class="dropbtn-text">Niger</p></a>
+                    <a href="#" onclick="selectCategory('North Africa')"><p class="dropbtn-text">North Africa</p></a>
+                    <a href="#" onclick="selectCategory('Romania')"><p class="dropbtn-text">Romania</p></a>
+                    <a href="#" onclick="selectCategory('Russia')"><p class="dropbtn-text">Russia</p></a>
+                    <a href="#" onclick="selectCategory('South Africa')"><p class="dropbtn-text">South Africa</p></a>
+                    <a href="#" onclick="selectCategory('Spain')"><p class="dropbtn-text">Spain</p></a>
+                    <a href="#" onclick="selectCategory('Switzerland')"><p class="dropbtn-text">Switzerland</p></a>
+                    <a href="#" onclick="selectCategory('Tanzania')"><p class="dropbtn-text">Tanzania</p></a>
+                    <a href="#" onclick="selectCategory('Tunisia')"><p class="dropbtn-text">Tunisia</p></a>
+                    <a href="#" onclick="selectCategory('United Kingdom')"><p class="dropbtn-text">United Kingdom</p></a>
+                    <a href="#" onclick="selectCategory('Uruguay')"><p class="dropbtn-text">Uruguay</p></a>
+                    <a href="#" onclick="selectCategory('USA')"><p class="dropbtn-text">USA</p></a>
+                    <a href="#" onclick="selectCategory('Uzbekistan')"><p class="dropbtn-text">Uzbekistan</p></a>
+                    <a href="#" onclick="selectCategory('Wales')"><p class="dropbtn-text">Wales</p></a>
+                    <a href="#" onclick="selectCategory('Zimbabwe')"><p class="dropbtn-text">Zimbabwe</p></a>
+                </div>
+            </div>
+
+            <!-- Third dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown3')" class="dropbtn" id="dropbtn3">Type</button>
+                <div id="dropdown3" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Armoured Dinosau', 'dropbtn3')"><p class="dropbtn-text">Armoured Dinosau</p></a>
+                    <a href="#" onclick="selectCategory('Ceratopsian', 'dropbtn3')"><p class="dropbtn-text">Ceratopsian</p></a>
+                    <a href="#" onclick="selectCategory('Euornithopod', 'dropbtn3')"><p class="dropbtn-text">Euornithopod</p></a>
+                    <a href="#" onclick="selectCategory('Sauropod', 'dropbtn3')"><p class="dropbtn-text">Sauropod</p></a>
+                    <a href="#" onclick="selectCategory('Small Theropod', 'dropbtn3')"><p class="dropbtn-text">Small Theropod</p></a>
+                    <a href="#" onclick="selectCategory('Large Theropod', 'dropbtn3')"><p class="dropbtn-text">Large Theropod</p></a>
+                </div>
+            </div>
+
+            <!-- Fourth dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown4')" class="dropbtn" id="dropbtn4">Length</button>
+                <div id="dropdown4" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Long', 'dropbtn4')"><p class="dropbtn-text">Long</p></a>
+                    <a href="#" onclick="selectCategory('Short', 'dropbtn4')"><p class="dropbtn-text">Short</p></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Submit button-->
+        <input class="Submit-button" type="submit" value="Submit">
+
+    </div>
+
+    <img id="animated-element" src="/images/dinosaur.png" alt="Animated Image">
+
+</body>
+</html>
