@@ -107,14 +107,8 @@ p {
   padding-top: 50px;
 }
 
-.dropbtn-text {
-  color: #2F302F;
-  padding: 5px;
-  font-size: 18px;
-}
-
 /* Style the dropdown button */
-.dropbtn {
+#dropdown1, #dropdown2, #dropdown3, #dropdown4 {
   display: block;
   width: 150px;
   height: auto;
@@ -144,9 +138,13 @@ p {
   z-index: 1;
 }
 
-.dropdown-content :hover{
-  background-color: #EFD462;
+.dropbtn-text {
+  color: #2F302F;
+  padding: 5px;
+  font-size: 20px;
+  font-family: ParagraphFont;
 }
+
 /* Show the dropdown menu when the button is clicked */
 .show {
   display: block;

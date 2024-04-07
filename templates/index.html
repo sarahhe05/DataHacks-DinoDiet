@@ -24,9 +24,11 @@
         
         <div class="option-container">
             
+            <form action="/submit" method="post"> 
+
             <!-- First dropdown menu -->
             <div class="dropdown">
-                <select id="dropdown1">
+                <select name="geological_period">
                     <option value="Cretaceous" class="dropbtn-text">Cretaceous</option>
                     <option value="Jurassic" class="dropbtn-text">Jurassic</option>
                     <option value="Triassic" class="dropbtn-text">Triassic</option>
@@ -35,7 +37,7 @@
 
             <!-- Second dropdown menu -->
             <div class="dropdown">
-                <select id="dropdown2">
+                <select name="country">
                     <option value="Antarctica" class="dropbtn-text">Antarctica</option>
                     <option value="Argentina" class="dropbtn-text">Argentina</option>
                     <option value="Australia" class="dropbtn-text">Australia</option>
@@ -48,7 +50,6 @@
                     <option value="India" class="dropbtn-text">India</option>
                     <option value="Japan" class="dropbtn-text">Japan</option>
                     <option value="Kazakhstan" class="dropbtn-text">Kazakhstan</option>
-                    <option value="Lesotho" class="dropbtn-text">Lesotho</option>
                     <option value="Madagascar" class="dropbtn-text">Madagascar</option>
                     <option value="Malawi" class="dropbtn-text">Malawi</option>
                     <option value="Mongolia" class="dropbtn-text">Mongolia</option>
@@ -73,21 +74,21 @@
 
             <!-- Third dropdown menu -->
             <div class="dropdown">
-                <select id="dropdown3">
-                    <option value="Armoured Dinosau" class="dropbtn-text">Armoured Dinosau</option>
-                    <option value="Ceratopsian" class="dropbtn-text">Ceratopsian</option>
-                    <option value="Euornithopod" class="dropbtn-text">Euornithopod</option>
-                    <option value="Sauropod" class="dropbtn-text">Sauropod</option>
-                    <option value="Small Theropod" class="dropbtn-text">Small Theropod</option>
-                    <option value="Large Theropod" class="dropbtn-text">Large Theropod</option>
+                <select name="dinosaur_type">
+                    <option value="armoured dinosaur" class="dropbtn-text">Armoured Dinosaur</option>
+                    <option value="ceratopsian" class="dropbtn-text">Ceratopsian</option>
+                    <option value="euornithopod" class="dropbtn-text">Euornithopod</option>
+                    <option value="sauropod" class="dropbtn-text">Sauropod</option>
+                    <option value="small theropod" class="dropbtn-text">Small Theropod</option>
+                    <option value="large theropod" class="dropbtn-text">Large Theropod</option>
                 </select>
             </div>
 
             <!-- Fourth dropdown menu -->
             <div class="dropdown">
-                <select id="dropdown3">
-                    <option value="Long" class="dropbtn-text">Long</option>
-                    <option value="Short"class="dropbtn-text">Short</option>
+                <select name="length">
+                    <option value="tall" class="dropbtn-text">Tall</option>
+                    <option value="short"class="dropbtn-text">Short</option>
                 </select>
             </div>
 
@@ -95,7 +96,7 @@
 
         <!-- Submit button-->
         <input class="Submit-button" type="submit" value="Submit">
-
+        </form>
     </div>
 
     <img id="animated-element" src="/static/images/dinosaur.png" alt="Animated Image">
