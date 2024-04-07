@@ -17,7 +17,7 @@
 /*style navbar*/
   nav {
     text-align: center;
-    font-size: 16pt;
+    font-size: 18pt;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -38,7 +38,7 @@
     text-decoration: none;
     color: #D7F2FD;
     padding: 14px;
-    font-family: 'Century Gothic';
+    font-family: 'TitleFont';
   }
   
   li a:hover {
@@ -106,23 +106,42 @@
     padding-top: 50px;
   }
 
-  .option-button {
+  .dropbtn-text {
+    color: #2F302F;
+    padding: 5px;
+  }
+
+  /* Style the dropdown button */
+  .dropbtn {
     display: block;
-    width: 70px;
+    width: 100px;
     height: auto;
     background-color:#D7F2FD;
-    margin-top: 20px; 
     padding: 10px;
     border-radius: 8px;
     border: none;
+    font-size: 15px;
+    font-family: TitleFont;
+    cursor: pointer;
   }
 
-  .option-button_text {
-    color: #2F302F;
-  }
-
-  .option-button:hover {
+  .dropbtn:hover {
     background-color:#EFD462;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F4F7E2;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1;
+  }
+
+  /* Show the dropdown menu when the button is clicked */
+  .show {
+    display: block;
   }
 
   .image-area{
@@ -130,13 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .uploaded-image{
-    width: 150px;
-    justify-content: center;
-    margin-top: 50px;
-  }
+  }  
 
   #animated-element { 
     width: 20%;

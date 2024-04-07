@@ -23,10 +23,47 @@
         <p> Dinosaur question LOLOL WE LOVE dinosaurs yay okay bye!</p>
         
         <div class="option-container">
-            <button type="button" class="option-button"><p class="option-button-text">Option A</p></button>
-            <button type="button" class="option-button"><p class="option-button-text">Option B</p></button>
-            <button type="button" class="option-button"><p class="option-button-text">Option C</p></button>
-            <button type="button" class="option-button"><p class="option-button-text">Option D</p></button>
+            
+            <!-- First dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')" class="dropbtn">Time Period</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="#"><p class="dropbtn-text">Jurassic</p></a>
+                    <a href="#"><p class="dropbtn-text">Cretaceous</p></a>
+                    <a href="#"><p class="dropbtn-text">Triassic</p></a>
+                </div>
+            </div>
+
+            <!-- Second dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown2')" class="dropbtn">Location</button>
+                <div id="dropdown2" class="dropdown-content">
+                    <a href="#"><p class="dropbtn-text">Tall</p></a>
+                    <a href="#"><p class="dropbtn-text">Short</p></a>
+                </div>
+            </div>
+
+            <!-- Third dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown3')" class="dropbtn">Type</button>
+                <div id="dropdown3" class="dropdown-content">
+                    <a href="#">Sauropod 'large theropod', 'ceratopsian', 'euornithopod',
+                        'small theropod', 'armoured dinosau
+                 </a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <!-- Fourth dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown4')" class="dropbtn">Length</button>
+                <div id="dropdown4" class="dropdown-content">
+                    <a href="#">Long</a>
+                    <a href="#">Short</a>
+                </div>
+            </div>
+
         </div>
     </div>
 
