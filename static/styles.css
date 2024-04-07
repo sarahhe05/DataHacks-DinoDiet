@@ -1,220 +1,226 @@
 /*reset page spacing*/
 * {
-    margin: 0px;
-    padding: 0px;
-  }
+  margin: 0px;
+  padding: 0px;
+}
 
-  @font-face {
-    font-family: 'TitleFont'; /* Name your font */
-    src: url('/antipasto/Antipasto-Pro-ExtraBold-trial.ttf'); /* URL to your font file */
-  }
+@font-face {
+  font-family: 'TitleFont'; /* Name your font */
+  src: url('/antipasto/Antipasto-Pro-ExtraBold-trial.ttf'); /* URL to your font file */
+}
 
-  @font-face {
-    font-family: 'ParagraphFont'; /* Name your font */
-    src: url('/antipasto/Antipasto-Pro-Regular-trial.ttf'); /* URL to your font file */
-  }
+@font-face {
+  font-family: 'ParagraphFont'; /* Name your font */
+  src: url('/antipasto/Antipasto-Pro-Regular-trial.ttf'); /* URL to your font file */
+}
 
 /*style navbar*/
-  nav {
-    text-align: center;
-    font-size: 18pt;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    background-color: #8ACFEB;
-    overflow: hidden;
-    padding: 10px;
-  }
-  
-  li {
-    display: inline;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: #D7F2FD;
-    padding: 14px;
-    font-family: 'TitleFont';
-  }
-  
-  li a:hover {
-    color: #F4F7E2;
-    background-color: #EFD462;
-  }
+nav {
+  text-align: center;
+  font-size: 18pt;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
 
-  body {
-    background-color: #D7F2FD;
-    background: url(/static/images/background.jpg);;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  h1 {
-    color: #F4F7E2;
-    font-size: 75pt;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'TitleFont';
-  }
+ul {
+  list-style-type: none;
+  background-color: #8ACFEB;
+  overflow: hidden;
+  padding: 10px;
+}
 
-  h2 {
-    color: #F4F7E2;
-    font-size: 30pt;
-    text-align: center;
-    font-family: 'TitleFont';
-    margin-top: 85px;
-  }
+li {
+  display: inline;
+}
 
-  h3 {
-    color: #F4F7E2;
-    font-size: 20pt;
-    text-align: center;
-    font-family: 'TitleFont';
-  }
- 
-  p {
-    font-size: 15pt;
-    text-align: center;
-    font-family: 'ParagraphFont';
-    color: #1d1210;
-  }
+li a {
+  text-decoration: none;
+  color: #D7F2FD;
+  padding: 14px;
+  font-family: 'TitleFont';
+}
 
-  #title {
-    padding-top: 10%;
-  }
+li a:hover {
+  color: #F4F7E2;
+  background-color: #EFD462;
+}
 
-  .outer-container{
-    background-color: #8ACFEB;
-    width: 800px;
-    height: 500px;
-    border-radius: 10px; /* Optional: Add rounded corners to the container */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+body {
+  background-color: #D7F2FD;
+  background: url(/static/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  .option-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding-top: 50px;
-  }
+h1 {
+  color: #F4F7E2;
+  font-size: 75pt;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'TitleFont';
+}
 
-  .dropbtn-text {
-    color: #2F302F;
-    padding: 5px;
-    font-size: 18px;
-  }
+h2 {
+  color: #F4F7E2;
+  font-size: 30pt;
+  text-align: center;
+  font-family: 'TitleFont';
+  margin-top: 85px;
+}
 
-  /* Style the dropdown button */
-  .dropbtn {
-    display: block;
-    width: 150px;
-    height: auto;
-    background-color:#D7F2FD;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    font-size: 20px;
-    font-family: TitleFont;
-    cursor: pointer;
-  }
+h3 {
+  color: #F4F7E2;
+  font-size: 20pt;
+  text-align: center;
+  font-family: 'TitleFont';
+}
 
-  .dropbtn:hover {
-    background-color:#EFD462;
-  }
+p {
+  font-size: 15pt;
+  text-align: center;
+  font-family: 'ParagraphFont';
+  color: #1d1210;
+}
 
-  /* Style the dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F4F7E2;
-    box-shadow: 0 8px 16px 0 #2F302F;
-    width: 150px;
-    text-align: center;
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: 200px; /* Set a max height for the dropdown */
-    z-index: 1;
-  }
+#title {
+  padding-top: 10%;
+}
 
-  .dropbtn-text:hover{
-    background-color: #EFD462;
-  }
+.outer-container{
+  background-color: #8ACFEB;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px; /* Optional: Add rounded corners to the container */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  /* Show the dropdown menu when the button is clicked */
-  .show {
-    display: block;
-  }
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
 
-  .image-area{
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }  
+.dropbtn-text {
+  color: #2F302F;
+  padding: 5px;
+  font-size: 18px;
+}
 
-  .Submit-button {
-    position: absolute;
-    left: 50%;
-    height: auto;
-    transform: translateX(-50%);
-    background-color:#D7F2FD;
-    margin-top: 20px; 
-    margin-bottom: 150px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    font-family: TitleFont;
-  }
+/* Style the dropdown button */
+.dropbtn {
+  display: block;
+  width: 150px;
+  height: auto;
+  background-color:#D7F2FD;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-family: TitleFont;
+  cursor: pointer;
+}
 
-  #animated-element { 
-    width: 20%;
-    background-image: url("/images/dinosaur.png");
-    background-repeat: no-repeat;
-    position: relative;
-    animation: move 4s infinite alternate; /* Apply the 'move' animation */
-  }
+.dropbtn:hover {
+  background-color:#EFD462;
+}
 
-  @keyframes move {
-    0% {
-        left: 1000px; /* Initial position */
-        top: 450px;
-        transform: rotate(25deg); /* Start rotation angle */
-    }
-    100% {
-        left: 1000px; /* Final position */
-        top: 450px;
-        transform: rotate(0deg); /* Start rotation angle */
-    }
-  }
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4F7E2;
+  box-shadow: 0 8px 16px 0 #2F302F;
+  width: 150px;
+  text-align: center;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 200px; /* Set a max height for the dropdown */
+  z-index: 1;
+}
+
+.dropdown-content :hover{
+  background-color: #EFD462;
+}
+/* Show the dropdown menu when the button is clicked */
+.show {
+  display: block;
+}
+
+.image-area{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.Submit-button {
+  position: absolute;
+  left: 50%;
+  height: auto;
+  transform: translateX(-50%);
+  background-color:#D7F2FD;
+  margin-top: 20px; 
+  margin-bottom: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: TitleFont;
+}
+
+.Submit-button:hover {
+  background-color:#EFD462;
+}
 
 
 
 
+#animated-element { 
+  width: 20%;
+  background-image: url("/images/dinosaur.png");
+  background-repeat: no-repeat;
+  position: relative;
+  animation: move 4s infinite alternate; /* Apply the 'move' animation */
+}
 
-  #grass{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will make the image cover the entire container without stretching */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensure the image is behind other content */
+@keyframes move {
+  0% {
+      left: 1000px; /* Initial position */
+      top: 450px;
+      transform: rotate(25deg); /* Start rotation angle */
   }
+  100% {
+      left: 1000px; /* Final position */
+      top: 450px;
+      transform: rotate(0deg); /* Start rotation angle */
+  }
+}
 
-  #dinosaur{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will make the image cover the entire container without stretching */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensure the image is behind other content */
-  }
+
+
+
+
+#grass{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will make the image cover the entire container without stretching */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+#dinosaur{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will make the image cover the entire container without stretching */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image is behind other content */
+}

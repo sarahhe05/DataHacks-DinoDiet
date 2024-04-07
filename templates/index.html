@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles.css"/>
     <script src="/static/extra.js" defer></script>
-    <title>Sarah He</title>
+    <title>Dinosaur Diet</title>
+
+</head>
 
 <body>
     <!--navigation bar-->
@@ -15,68 +17,89 @@
           <li><a href='#other-section'><b>visualization</b></a></li>
         </ul>
     </nav>
-
+    
     <div class="outer-container">
-        <h1 id="title">Dinosaur</h1>
-        <p>Dinosaur question LOLOL WE LOVE dinosaurs yay okay bye!</p>
-    
+        <h1 id="title">Dinosaur Diet</h1>
+        <p>You encountered a dinosaur! </p>
+        
         <div class="option-container">
-            <form id="dinosaur-form" action="/submit" method="post">
-                <!-- First dropdown menu -->
-                <div class="dropdown">
-                    <button type = "button" onclick="toggleDropdown('dropdown1')" class="dropbtn">Time Period</button>
-                    <div id="dropdown1" class="dropdown-content">
-                        <a href="#"><p class="dropbtn-text">Cretaceous</p></a>
-                        <a href="#"><p class="dropbtn-text">Jurassic</p></a>
-                        <a href="#"><p class="dropbtn-text">Triassic</p></a>
-                    </div>
+            
+            <!-- First dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')" class="dropbtn" id="dropbtn1">Time Period</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Cretaceous', 'dropbtn1')"><p class="dropbtn-text">Cretaceous</p></a>
+                    <a href="#" onclick="selectCategory('Jurassic', 'dropbtn1')"><p class="dropbtn-text">Jurassic</p></a>
+                    <a href="#" onclick="selectCategory('Triassic', 'dropbtn1')"><p class="dropbtn-text">Triassic</p></a>
                 </div>
-    
-                <!-- Second dropdown menu -->
-                <div class="dropdown">
-                    <button type="button" onclick="toggleDropdown('dropdown2')" class="dropbtn">Location</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <select name="dropdown2" class="dropbtn-text">
-                            <option value="Antarctica">Antarctica</option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="Canada">Canada</option>
-                            <!-- Add other location options here -->
-                        </select>
-                    </div>
+            </div>
+
+            <!-- Second dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown2')" class="dropbtn" id="dropbtn2">Location</button>
+                <div id="dropdown2" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Antarctica', 'dropbtn2')"><p class="dropbtn-text">Antarctica</p></a>
+                    <a href="#" onclick="selectCategory('Argentina', 'dropbtn2')"><p class="dropbtn-text">Argentina</p></a>
+                    <a href="#" onclick="selectCategory('Australia', 'dropbtn2')"><p class="dropbtn-text">Australia</p></a>
+                    <a href="#" onclick="selectCategory('Brazil', 'dropbtn2')"><p class="dropbtn-text">Brazil</p></a>
+                    <a href="#" onclick="selectCategory('Canada', 'dropbtn2')"><p class="dropbtn-text">Canada</p></a>
+                    <a href="#" onclick="selectCategory('China', 'dropbtn2')"><p class="dropbtn-text">China</p></a>
+                    <a href="#" onclick="selectCategory('Egypt', 'dropbtn2')"><p class="dropbtn-text">Egypt</p></a>
+                    <a href="#" onclick="selectCategory('France', 'dropbtn2')"><p class="dropbtn-text">France</p></a>
+                    <a href="#" onclick="selectCategory('Germany', 'dropbtn2')"><p class="dropbtn-text">Germany</p></a>
+                    <a href="#" onclick="selectCategory('India', 'dropbtn2')"><p class="dropbtn-text">India</p></a>
+                    <a href="#" onclick="selectCategory('Japan', 'dropbtn2')"><p class="dropbtn-text">Japan</p></a>
+                    <a href="#" onclick="selectCategory('Kazakhstan', 'dropbtn2')"><p class="dropbtn-text">Kazakhstan</p></a>
+                    <a href="#" onclick="selectCategory('Lesotho', 'dropbtn2')"><p class="dropbtn-text">Lesotho</p></a>
+                    <a href="#" onclick="selectCategory('Madagascar', 'dropbtn2')"><p class="dropbtn-text">Madagascar</p></a>
+                    <a href="#" onclick="selectCategory('Malawi', 'dropbtn2')"><p class="dropbtn-text">Malawi</p></a>
+                    <a href="#" onclick="selectCategory('Mongolia', 'dropbtn2')"><p class="dropbtn-text">Mongolia</p></a>
+                    <a href="#" onclick="selectCategory('Morocco', 'dropbtn2')"><p class="dropbtn-text">Morocco</p></a>
+                    <a href="#" onclick="selectCategory('Niger', 'dropbtn2')"><p class="dropbtn-text">Niger</p></a>
+                    <a href="#" onclick="selectCategory('North Africa', 'dropbtn2')"><p class="dropbtn-text">North Africa</p></a>
+                    <a href="#" onclick="selectCategory('Romania', 'dropbtn2')"><p class="dropbtn-text">Romania</p></a>
+                    <a href="#" onclick="selectCategory('Russia', 'dropbtn2')"><p class="dropbtn-text">Russia</p></a>
+                    <a href="#" onclick="selectCategory('South Africa', 'dropbtn2')"><p class="dropbtn-text">South Africa</p></a>
+                    <a href="#" onclick="selectCategory('Spain', 'dropbtn2')"><p class="dropbtn-text">Spain</p></a>
+                    <a href="#" onclick="selectCategory('Switzerland', 'dropbtn2')"><p class="dropbtn-text">Switzerland</p></a>
+                    <a href="#" onclick="selectCategory('Tanzania', 'dropbtn2')"><p class="dropbtn-text">Tanzania</p></a>
+                    <a href="#" onclick="selectCategory('Tunisia', 'dropbtn2')"><p class="dropbtn-text">Tunisia</p></a>
+                    <a href="#" onclick="selectCategory('United Kingdom', 'dropbtn2')"><p class="dropbtn-text">United Kingdom</p></a>
+                    <a href="#" onclick="selectCategory('Uruguay', 'dropbtn2')"><p class="dropbtn-text">Uruguay</p></a>
+                    <a href="#" onclick="selectCategory('USA', 'dropbtn2')"><p class="dropbtn-text">USA</p></a>
+                    <a href="#" onclick="selectCategory('Uzbekistan', 'dropbtn2')"><p class="dropbtn-text">Uzbekistan</p></a>
+                    <a href="#" onclick="selectCategory('Wales', 'dropbtn2')"><p class="dropbtn-text">Wales</p></a>
+                    <a href="#" onclick="selectCategory('Zimbabwe', 'dropbtn2')"><p class="dropbtn-text">Zimbabwe</p></a>
                 </div>
-    
-                <!-- Third dropdown menu -->
-                <div class="dropdown">
-                    <button type="button" onclick="toggleDropdown('dropdown3')" class="dropbtn">Type</button>
-                    <div id="dropdown3" class="dropdown-content">
-                        <select name="dropdown3" class="dropbtn-text">
-                            <option value="armoured dinosaur">Armoured Dinosaur</option>
-                            <option value="ceratopsian">Ceratopsian</option>
-                            <option value="euornithopod">Euornithopod</option>
-                            <option value="sauropod">Sauropod</option>
-                            <option value="small theropod">Small Theropod</option>
-                            <option value="large theropod">Large Theropod</option>
-                        </select>
-                    </div>
+            </div>
+
+            <!-- Third dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown3')" class="dropbtn" id="dropbtn3">Type</button>
+                <div id="dropdown3" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Armoured Dinosau', 'dropbtn3')"><p class="dropbtn-text">Armoured Dinosau</p></a>
+                    <a href="#" onclick="selectCategory('Ceratopsian', 'dropbtn3')"><p class="dropbtn-text">Ceratopsian</p></a>
+                    <a href="#" onclick="selectCategory('Euornithopod', 'dropbtn3')"><p class="dropbtn-text">Euornithopod</p></a>
+                    <a href="#" onclick="selectCategory('Sauropod', 'dropbtn3')"><p class="dropbtn-text">Sauropod</p></a>
+                    <a href="#" onclick="selectCategory('Small Theropod', 'dropbtn3')"><p class="dropbtn-text">Small Theropod</p></a>
+                    <a href="#" onclick="selectCategory('Large Theropod', 'dropbtn3')"><p class="dropbtn-text">Large Theropod</p></a>
                 </div>
-    
-                <!-- Fourth dropdown menu -->
-                <div class="dropdown">
-                    <button type="button" onclick="toggleDropdown('dropdown4')" class="dropbtn">Length</button>
-                    <div id="dropdown4" class="dropdown-content">
-                        <select name="dropdown4" class="dropbtn-text">
-                            <option value="Long">Long</option>
-                            <option value="Short">Short</option>
-                        </select>
-                    </div>
+            </div>
+
+            <!-- Fourth dropdown menu -->
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown4')" class="dropbtn" id="dropbtn4">Length</button>
+                <div id="dropdown4" class="dropdown-content">
+                    <a href="#" onclick="selectCategory('Long', 'dropbtn4')"><p class="dropbtn-text">Long</p></a>
+                    <a href="#" onclick="selectCategory('Short', 'dropbtn4')"><p class="dropbtn-text">Short</p></a>
                 </div>
-    
-                <!-- Submit button-->
-                <button type="submit" class="Submit-button">Submit</button>
-            </form>
+            </div>
+
         </div>
+
+        <!-- Submit button-->
+        <input class="Submit-button" type="submit" value="Submit">
+
     </div>
 
     <img id="animated-element" src="/static/images/dinosaur.png" alt="Animated Image">
