@@ -1,6 +1,7 @@
 # Importing required libs
 from flask import Flask, render_template, request
 from model import predict_one
+import time
 
 # Instantiating flask app
 app = Flask(__name__)
