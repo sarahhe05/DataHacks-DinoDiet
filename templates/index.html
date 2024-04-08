@@ -118,6 +118,40 @@
 
     <section id='visualizations'>
         <h1>visualizations</h1>
+       
+        <div class='visualizations-row'>
+            <!--Visualization A-->
+            <div class='visualizations-column1'>
+              <h1 id='visualizations-title'> Confusion Matrix </h1>
+              <p id='visualizations-description'> The confusion matrix below uses zero to represent herbivorous, one for carnivorous, 
+                and two for omnivorous dinosaurs. It showcases our model's success rate in predicting any given dinosaur's diet. For example, 
+                the box with a zero in both axis indicates that twenty two dinosaurs that are actually herbivorous are predicted to be
+                herbivorous. </p>
+            
+              <div class='visualizations-photo-box'>
+                <img src='/static/images/confusion-matrix.png' class='visualizations-photo' id='visualizations-photo'>
+              </div>
+            </div>
+            
+            <!--Visualization B-->
+            <div class='visualizations-column2'>
+                <h1 id='visualizations-title'> Most important Features </h1>
+                <p id='visualizations-description'> The most important features in our prediction model. </p>
+
+                <div class='visualizations-photo-box'>
+                  <img src='/static/images/top-features.jpg' class='visualizations-photo' id='visualizations-photo'>
+                </div>
+
+                <h1 id='visualizations-title'> Most Dinosaurs Lived In ... </h1>
+                <p id='visualizations-description'> The top countries with the most dinosaurs. </p>
+
+                <div class='visualizations-photo-box'>
+                  <img src='/static/images/top-countries.jpeg' class='visualizations-photo' id='visualizations-photo'>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 </body>
 </html>

@@ -64,6 +64,7 @@ p {
   text-align: center;
   font-family: 'ParagraphFont';
   color: #2F302F;
+  line-height: 20px;
 }
 
 #dino-diet{
@@ -242,4 +243,48 @@ select[name="geological_period"], select[name="country"], select[name="dinosaur_
       top: 450px;
       transform: rotate(0deg); /* Start rotation angle */
   }
+}
+
+.visualizations-row{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 25px;
+}
+
+#visualizations-title{
+  width: 100%;
+  object-fit: cover;
+  font-size: 40px;
+}
+
+#visualizations-description{
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 15px;
+}
+
+.visualizations-column1{
+  object-fit: cover;
+}
+
+.visualizations-photo-box {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  }
+
+.visualizations-photo {
+  position: relative;
+  width: auto ; /* Make sure the images fill the container */
+  top: 0;
+  left: 0;
+}
+
+#visualizations-photo{
+  width: 100%;
+  object-fit: cover;
 }
